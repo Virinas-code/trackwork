@@ -23,6 +23,12 @@ public class TrackworkMod implements ModInitializer {
 		LOGGER.info("Hello Quilt world from {}!", mod.metadata().name());
 
 		Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, TrackCreativeTabs.CUSTOM_ITEM_GROUP_KEY, TrackCreativeTabs.CUSTOM_ITEM_GROUP);
+		TrackBlocks.register();
+		TrackBlockEntityTypes.register();
+		TrackEntityTypes.register();
+		TrackPackets.registerPackets();
+		TrackPonders.register();
+//		TrackSounds.register(modEventBus);
 	}
 
 	public static ResourceLocation getResource(String path) {
