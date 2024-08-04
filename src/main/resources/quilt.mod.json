@@ -1,25 +1,26 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "${group}",
-		"id": "example_mod",
+		"group": "edn.stratodonut.trackwork",
+		"id": "trackwork",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "Trackwork Mod",
+			"description": "Adds track blocks that work with VS2 physics.\\nWarranty void if suspension springs are compressed",
 			"contributors": {
-				"Your name here": "Owner"
+				"Endalion": "Owner",
+				"Virinas-code": "Developer"
 			},
 			"contact": {
-				"homepage": "https://example.com/",
-				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
-				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+				"homepage": "https://github.com/Virinas-code/trackwork",
+				"issues": "https://github.com/Virinas-code/trackwork/issues",
+				"sources": "https://github.com/Virinas-code/trackwork"
 			},
 			"icon": "assets/example_mod/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "edn.stratodonut.trackwork.TrackworkMod"
 		},
 		"depends": [
 			{
@@ -36,5 +37,5 @@
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "trackwork.mixins.json"
 }
